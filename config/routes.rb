@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   
   # config/routes.rb
 resources :posts, only: [:index, :show, :new, :create, :edit, :update]
-
+patch 'posts/:id', to: 'posts#update'
 end
